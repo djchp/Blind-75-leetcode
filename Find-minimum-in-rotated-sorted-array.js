@@ -6,7 +6,7 @@ var findMin = function(nums) {
     let start = 0
     let end = nums.length - 1
     while (start < end) {
-        const mid = ~~((start+end)/2)
+        const mid = Math.floor((start+end)/2)
         if(nums[mid] > nums[end]) {
             start = mid + 1
         } else {
